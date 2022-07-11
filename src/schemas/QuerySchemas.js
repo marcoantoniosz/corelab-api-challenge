@@ -1,0 +1,20 @@
+const messages = { blank_space: 'Campo de busca não pode ficar em branco' };
+
+const validateQuery = (searchTerm) => {
+  if(!searchTerm) {
+    return { message: { message: messages.blank_space } };
+  }
+  return {};
+};
+
+const validateId = (id) => {
+  if(!id) {
+    return { message: { message: messages.blank_space } };
+  }
+  return {};
+};
+
+module.exports = {
+  validateQuery,
+  validateId
+};
